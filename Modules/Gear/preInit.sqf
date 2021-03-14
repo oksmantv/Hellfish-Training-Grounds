@@ -27,6 +27,7 @@ GVAR(StaminaCoef) = 0.5;
 		[
 			"NATO-D",
 			"NATO-W",
+			"RUSSIAN-W",
 			"BAF-D",
 			"BAF-W",
 			"USMC-D",
@@ -38,6 +39,7 @@ GVAR(StaminaCoef) = 0.5;
 		[
 			"NATO-Desert",
 			"NATO-Woodland",
+			"RUSSIAN-Woodland",
 			"BAF-Desert",
 			"BAF-Woodland",
 			"USMC-Desert",

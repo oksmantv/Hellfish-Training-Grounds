@@ -1,23 +1,51 @@
 
+// B_Soldier_SL_F - wpl
+// Equipment
 _goggles = "";
-_helmet = "CUP_H_USArmy_HelmetMICH";
-_uniform = "CUP_U_B_USArmy_TwoKnee";
-_vest = "CUP_V_B_IOTV_TL";
-_backpack = "CUP_B_AssaultPack_ACU";
+_helmet = "rhsusf_ach_helmet_ESS_ucp";
+_uniform = "rhs_uniform_cu_ucp_1stcav";
+_vest = "rhsusf_iotv_ucp_Rifleman";
+_backpack = "rhsusf_assault_eagleaiii_ucp";
+// Primary
+_silencer = "";
+_pointer = "";
+_sight = "CUP_optic_AC11704_Black";
+_bipod = "";
+_rifle = "rhs_weap_m240G";
+_rifle_mag = "rhsusf_100Rnd_762x51";
+_rifle_mag_tr = "rhsusf_100Rnd_762x51_m62_tracer";
+
+// Secondary
+_silencer = "";
+_pointer = "";
+_sight = "";
+_bipod = "";
+_LAT = "";
+_LAT_mag = "";
+
+// Handgun
+_silencer = "";
+_pointer = "";
+_sight = "";
+_bipod = "";
+_pistol = "rhsusf_weap_m9";
+_pistolMag = "rhsusf_mag_15Rnd_9x19_JHP";
+
+
+
+
+
+
+
+_goggles = "G_Balaclava_TI_blk_F";
+_helmet = "rhsusf_ach_helmet_headset_ess_ucp";
+_uniform = "rhs_uniform_cu_ucp_1stcav";
+_vest = "rhsusf_iotv_ucp_Rifleman";
+_backpack = "rhsusf_assault_eagleaiii_ucp";
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_mr3000_multicam";
+	_backpackRadio = "tf_anprc155_coyote";
 };
 
-if (_role in ["r","rat","mat","amat"]) then {
-	_vest = "CUP_V_B_IOTV_AT";
-};
-if (_role in ["ag","ammg"]) then {
-	_vest = "CUP_V_B_IOTV_Medic";
-	_backpack = "CUP_B_MedicPack_ACU";
-};
-if (_role in ["ar","mmg"]) then {
-	_vest = "CUP_V_B_IOTV_MG";
-};
 if (_role isEqualTo "crew") then {
 	_helmet = "CUP_H_USMC_Crew_Helmet";
 	_vest = "CUP_V_B_IOTV_Rifleman";
@@ -43,31 +71,31 @@ if (_role isEqualTo "jetp") then {
 
 _silencer = "";
 _pointer = "";
-_sight = "";
-_bipod = "";
+_sight = "CUP_optic_AC11704_Black";
+_bipod = "rhsusf_acc_grip1";
 
-_rifle = ["CUP_arifle_Mk16_STD_FG", _silencer, _pointer, _sight, _bipod];
-_rifleC = ["CUP_arifle_Mk16_CQC", _silencer, _pointer, _sight, _bipod];
-_rifleGL = ["CUP_arifle_Mk16_STD_EGLM", _silencer, _pointer, _sight, _bipod];
-_rifle_mag = "30Rnd_556x45_Stanag";
-_rifle_mag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
+_rifle = ["rhs_weap_m4a1_carryhandle_grip", _silencer, _pointer, _sight, _bipod];
+_rifleC = ["rhs_weap_m4a1_carryhandle_grip", _silencer, _pointer, _sight, _bipod];
+_rifleGL = ["rhs_weap_m4a1_carryhandle_m203S", _silencer, _pointer, _sight, _bipod];
+_rifle_mag = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+_rifle_mag_tr = "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 
-_LMG = ["CUP_lmg_M249", _silencer, _pointer, _sight, _bipod];
-_LMG_mag = "CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+_LMG = ["rhs_weap_m249_light_S_vfg2", _silencer, _pointer, _sight, _bipod];
+_LMG_mag = "200Rnd_556x45_Box_Red_F";
 
 _MMG = ["CUP_lmg_M240", _silencer, _pointer, _sight, _bipod];
 _MMG_mag = "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M";
 
-_LAT = ["CUP_launch_M136", _silencer, _pointer, _sight, _bipod];
-_LAT_mag = "";
+_LAT = ["rhs_weap_M136_hedp", _silencer, _pointer, _sight, _bipod];
+_LAT_mag = "rhs_m136_hedp_mag";
 _LAT_ReUsable = false;
 
-_MAT = ["CUP_launch_Mk153Mod0", _silencer, _pointer, "CUP_optic_SMAW_Scope", _bipod];
-_MAT_mag = "CUP_SMAW_HEDP_M";
-_MAT_mag_HE = "CUP_SMAW_HEAA_M";
+_MAT = ["launch_MRAWS_olive_rail_F", _silencer, _pointer, "CUP_optic_SMAW_Scope", _bipod];
+_MAT_mag = "MRAWS_HEAT_F";
+_MAT_mag_HE = "MRAWS_HE_F";
 
-_pistol = ["CUP_hgun_M9", _silencer, _pointer, _sight, _bipod];
-_pistol_mag = "CUP_15Rnd_9x19_M9";
+_pistol = ["rhsusf_weap_m9", _silencer, _pointer, _sight, _bipod];
+_pistol_mag = "rhsusf_mag_15Rnd_9x19_JHP";
 
 _silencer = "muzzle_snds_B";
 _pointer = "";

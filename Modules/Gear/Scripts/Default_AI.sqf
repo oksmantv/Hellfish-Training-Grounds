@@ -22,7 +22,7 @@ switch (toLower(_role)) do {
 		[_rifleGL, _rifleGL_mag_tr, _glHE] call _addPrimary;
 		_IFAK call _addToUniform;
 		[[_smokegrenadeW,2],[_grenademini,2]] call _addToUniform;
-		[[_rifleGL_mag_tr,8],[_glHE,7]] call _addToVest;
+		[[_rifleGL_mag_tr,8]] call _addToVest;
 		["", "", "", "", "", _nvg] call _addLinkedItems;
 	};
 
@@ -50,7 +50,7 @@ switch (toLower(_role)) do {
 		[_rifleGL, _rifleGL_mag_tr, _glHE] call _addPrimary;
 		_IFAK call _addToUniform;
 		[[_smokegrenadeW,2],[_grenademini,2]] call _addToUniform;
-		[[_rifleGL_mag_tr,8],[_glHE,7],[_glsmokeR,2]] call _addToVest;
+		[[_rifleGL_mag_tr,8],[_glsmokeR,2]] call _addToVest;
 		["", "", "", "", "", _nvg] call _addLinkedItems;
 		if (_LAT_ReUsable) then {
 			[[_LAT_mag,1],[_LAT_mag_HE,1]] call _addToBackpack;

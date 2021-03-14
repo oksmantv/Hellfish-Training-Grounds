@@ -1,8 +1,12 @@
 
+
+
+
+
 _goggles = "";
-_helmet = selectRandom ["H_HelmetIA_net","H_HelmetIA_camo","H_HelmetIA"];
+_helmet = selectRandom ["CUP_H_USArmy_Helmet_M1_Vine","CUP_H_USArmy_Helmet_M1_plain_Vine","H_HelmetIA","H_Booniehat_mgrn","H_Cap_grn"];
 _uniform = selectRandom ["U_I_CombatUniform","U_I_CombatUniform_shortsleeve","U_I_CombatUniform_tshirt"];
-_vest = selectRandom ["V_PlateCarrierIA2_dgtl","V_PlateCarrierIA1_dgtl"];
+_vest = selectRandom ["V_TacVest_oli","V_TacVest_oli"];
 _backpack = "B_FieldPack_oli";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
@@ -36,30 +40,32 @@ if (_role isEqualTo "jetp") then {
 
 _silencer = "";
 _pointer = "";
-_sight = "";
+_sight = "optic_MRCO";
 _bipod = "";
 
-_rifle = ["arifle_Mk20_F", _silencer, _pointer, _sight, _bipod];
-_rifleC = ["arifle_Mk20C_F", _silencer, _pointer, _sight, _bipod];
-_rifleGL = ["arifle_Mk20_GL_F", _silencer, _pointer, _sight, _bipod];
-_rifle_mag = "30Rnd_556x45_Stanag";
-_rifle_mag_tr = "30Rnd_556x45_Stanag_Tracer_Yellow";
+_rifle = ["CUP_arifle_M16A1E1", _silencer, _pointer, _sight, _bipod];
+_rifleC = ["CUP_SKS_rail", _silencer, _pointer, _sight, _bipod];
+_rifleGL = ["CUP_arifle_M16A1E1GL", _silencer, _pointer, _sight, _bipod];
+_rifle_mag = "CUP_30Rnd_556x45_Stanag";
+_rifleC_mag = "CUP_10Rnd_762x39_SKS_M";
+_rifle_mag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
-_LMG = ["LMG_Mk200_F", _silencer, _pointer, _sight, _bipod];
-_LMG_mag = "200Rnd_65x39_cased_Box";
-_LMG_mag_tr = "200Rnd_65x39_cased_Box_Tracer";
+_LMG = ["CUP_lmg_UK59", _silencer, _pointer, _sight, _bipod];
+_LMG_mag = "CUP_50Rnd_UK59_762x54R_Tracer";
+_LMG_mag_tr = "CUP_50Rnd_UK59_762x54R_Tracer";
 
 _MMG = ["LMG_Mk200_F", _silencer, _pointer, _sight, _bipod];
 _MMG_mag = "200Rnd_65x39_cased_Box";
 _MMG_mag_tr = "200Rnd_65x39_cased_Box_Tracer";
 
-_LAT = ["launch_NLAW_F", _silencer, _pointer, _sight, _bipod];
-_LAT_mag = "NLAW_F";
-_LAT_ReUsable = false;
 
-_MAT = ["launch_RPG32_F", _silencer, _pointer, _sight, _bipod];
-_MAT_mag = "RPG32_F";
-_MAT_mag_HE = "RPG32_HE_F";
+_LAT = ["launch_RPG7_F", _silencer, _pointer, _sight, _bipod];
+_LAT_mag = "rhs_rpg7_OG7V_mag";
+_LAT_ReUsable = true;
+
+_MAT = ["launch_RPG7_F", _silencer, _pointer, _sight, _bipod];
+_MAT_mag = "rhs_rpg7_OG7V_mag";
+_MAT_mag_HE = "rhs_rpg7_OG7V_mag";
 
 _pistol = ["hgun_ACPC2_F", _silencer, _pointer, _sight, _bipod];
 _pistol_mag = "9Rnd_45ACP_Mag";
